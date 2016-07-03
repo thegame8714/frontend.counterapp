@@ -1,13 +1,21 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 
-import LayoutPage from "./pages/Layout";
 const app = document.getElementById("app");
 
-render((
+import App from "./App";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Sync from "./pages/Sync";
+
+
+ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path="/" component={LayoutPage}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route path="about" component={About}/>
+      <Route path="sync" component={Sync}/>
     </Route>
   </Router>
 ), app);

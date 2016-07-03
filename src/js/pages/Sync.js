@@ -1,12 +1,13 @@
 import React from "react";
 
-class LayoutPage extends React.Component{
+class Sync extends React.Component{
 	render() {
 		return (
 			<div>
+				<h1>Sync Page</h1>
 			</div>
 		);
 	}
 }
 
-export default LayoutPage;
+export default Sync;
