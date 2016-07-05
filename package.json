@@ -24,11 +24,22 @@
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.5.0",
+    "cheerio": "^0.20.0",
+    "enzyme": "^2.3.0",
+    "mocha": "^2.5.3",
+    "react": "^15.2.0",
+    "react-addons-test-utils": "^15.2.0",
+    "sinon": "^1.17.4"
+  },
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -production"
+    "build": "webpack -production",
+    "test": "mocha --compilers js:babel-core/register",
+    "test:watch": "npm test -- --watch"
   },
   "author": "Lukasz Pietraszek",
   "license": "ISC"
