@@ -1,65 +1,28 @@
 import React from "react";
-import { Link } from "react-router"
-class Home extends React.Component{
+import { Link } from "react-router";
+
+class Home extends React.Component {
 	render() {
+		const practices = this.props.route.data;
+		const practiceNode = practices.map((practice) => {
+			return (
+				<li key={practice.id} className="table-view-cell media">
+					<Link to={"/practice/" + practice.id} className="navigate-right">
+						<img className="media-object pull-left" src={practice.img} />
+						<div className="media-body">
+							{practice.name}
+							<p>{practice.desc}</p>
+						</div>
+					</Link>
+				</li >
+			)
+		});
+
 		return (
 			<div className="content">
 				<ul className="table-view">
 					<li className="table-view-cell table-view-divider">Your activities</li>
-					<li className="table-view-cell media">
-						<Link to="/practice" className="navigate-right">
-							<img className="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Practice's 1 poster" />
-							<div className="media-body">
-								Practice 1
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</div>
-						</Link>
-					</li>
-					<li className="table-view-cell media">
-						<Link to="/practice" className="navigate-right">
-							<img className="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Practice's 2 poster" />
-							<div className="media-body">
-								Practice 2
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</div>
-						</Link>
-					</li>
-					<li className="table-view-cell media">
-						<Link to="/practice" className="navigate-right">
-							<img className="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Practice's 1 poster" />
-							<div className="media-body">
-								Practice 3
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</div>
-						</Link>
-					</li>
-					<li className="table-view-cell media">
-						<Link to="/practice" className="navigate-right">
-							<img className="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Practice's 4 poster" />
-							<div className="media-body">
-								Practice 4
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</div>
-						</Link>
-					</li>
-					<li className="table-view-cell media">
-						<Link to="/practice" className="navigate-right">
-							<img className="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Practice's 5 poster" />
-							<div className="media-body">
-								Practice 5
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</div>
-						</Link>
-					</li>
-					<li className="table-view-cell media">
-						<Link to="/practice" className="navigate-right">
-							<img className="media-object pull-left" src="http://placehold.it/64x64" alt="Placeholder image for Practice's 6 poster" />
-							<div className="media-body">
-								Practice 6
-								<p>Lorem ipsum dolor sit amet, consectetur.</p>
-							</div>
-						</Link>
-					</li>
+					{practiceNode}
 				</ul>
 			</div>
 		);
@@ -67,3 +30,5 @@ class Home extends React.Component{
 }
 
 export default Home;
+
+
