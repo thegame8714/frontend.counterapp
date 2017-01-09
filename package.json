@@ -35,8 +35,8 @@
   "scripts": {
     "dev": "webpack-dev-server --content-base src --inline --hot",
     "build": "webpack -production",
-    "test": "jest",
-    "watch:test": "jest --watch --config=./jest.config.json"
+    "test": "jest --coverage --config=./jest.config.json",
+    "watch:test": "jest --watch"
   },
   "author": "Lukasz Pietraszek",
   "license": "ISC"
