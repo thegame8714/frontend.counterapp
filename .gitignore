@@ -1,5 +1,4 @@
 node_modules/
 coverage/
-__snapshots__/
 npm-debug.log
 client.min.js*

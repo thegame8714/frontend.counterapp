@@ -1,0 +1,48 @@
+exports[`<App /> should match with snapshot 1`] = `
+<App>
+  <div>
+    <Header>
+      <header
+        className="bar bar-nav">
+        <Link
+          className="icon icon-left-nav pull-left"
+          onlyActiveOnIndex={false}
+          style={Object {}}
+          to="/">
+          <a
+            className="icon icon-left-nav pull-left"
+            onClick={[Function]}
+            style={Object {}} />
+        </Link>
+        <Link
+          className="icon icon-gear pull-right"
+          onlyActiveOnIndex={false}
+          style={Object {}}
+          to="/sync">
+          <a
+            className="icon icon-gear pull-right"
+            onClick={[Function]}
+            style={Object {}} />
+        </Link>
+        <h1
+          className="title">
+          <Link
+            className="navbar-brand"
+            onlyActiveOnIndex={false}
+            style={Object {}}
+            to="/">
+            <a
+              className="navbar-brand"
+              onClick={[Function]}
+              style={Object {}}>
+              CounterApp
+            </a>
+          </Link>
+        </h1>
+      </header>
+    </Header>
+  </div>
+</App>
+`;
+
+exports[`<App /> should render React Router children components 1`] = `<div />`;
