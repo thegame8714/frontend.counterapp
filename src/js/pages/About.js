@@ -1,11 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 
-class About extends React.Component{
+class About extends Component {
+	constructor(props) {
+		super()
+	}
 	render() {
 		return (
-			<div>
-				<h1>About Page</h1>
+
+			<div className='content'>
+				<h1>{this.props.route.pageTitle}</h1>
 			</div>
+
 		);
 	}
 }

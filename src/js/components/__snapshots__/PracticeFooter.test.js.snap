@@ -1,0 +1,58 @@
+exports[`<PracticeFooter /> should match snapshot 1`] = `
+<PracticeFooter>
+  <div
+    className="bar bar-tab">
+    <Link
+      className="tab-item"
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to="/start">
+      <a
+        className="tab-item"
+        onClick={[Function]}
+        style={Object {}}>
+        <span
+          className="icon icon-play" />
+        <span
+          className="tab-label">
+          Start practice
+        </span>
+      </a>
+    </Link>
+    <Link
+      className="tab-item"
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to="/schedule">
+      <a
+        className="tab-item"
+        onClick={[Function]}
+        style={Object {}}>
+        <span
+          className="icon icon-compose" />
+        <span
+          className="tab-label">
+          Schedule
+        </span>
+      </a>
+    </Link>
+    <Link
+      className="tab-item"
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to="/edit">
+      <a
+        className="tab-item"
+        onClick={[Function]}
+        style={Object {}}>
+        <span
+          className="icon icon-edit" />
+        <span
+          className="tab-label">
+          Edit
+        </span>
+      </a>
+    </Link>
+  </div>
+</PracticeFooter>
+`;

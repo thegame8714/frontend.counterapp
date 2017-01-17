@@ -61,7 +61,7 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route component={App}>
       <Route path="/" component={Home} data={data} />
-      <Route path="/about" component={About} />
+      <Route path="/about" component={About} pageTitle="About page" />
       <Route path="/sync" component={Sync} />
       <Route path="/start" component={Start} />
       <Route path="/schedule" component={Schedule} />
