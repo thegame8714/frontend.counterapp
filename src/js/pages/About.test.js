@@ -1,14 +1,12 @@
 import React from 'react';
 import { mount } from 'enzyme';
-
+import { mountToJson } from 'enzyme-to-json';
 import About from './About';
 
 describe('About Page', () => {
-  it('should render H1 with text', () => {
-    const wrapper = mount(<About pageTitle="page title" />);
-    const pageHeading = wrapper.find('h1')
-    expect(pageHeading).toHaveLength(1);
-    expect(pageHeading.text()).toEqual('page title');
-
-  })
+  it('should render page tile as H1 with text', () => {
+    const route = { pageTitle: "Test Page title" }
+    const wrapper = mount(<About route={route} />);
+    expect(mountToJson(wrapper)).toMatchSnapshot();
+  });
 });

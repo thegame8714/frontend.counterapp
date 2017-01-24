@@ -1,0 +1,15 @@
+exports[`About Page should render page tile as H1 with text 1`] = `
+<About
+  route={
+    Object {
+      "pageTitle": "Test Page title",
+    }
+  }>
+  <div
+    className="content">
+    <h1>
+      Test Page title
+    </h1>
+  </div>
+</About>
+`;
