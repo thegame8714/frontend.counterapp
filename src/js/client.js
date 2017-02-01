@@ -8,7 +8,7 @@ import App from "./App";
 
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Sync from "./pages/Sync";
+import Settings from "./pages/Settings";
 import Start from "./pages/Start";
 import Schedule from "./pages/Schedule";
 import Edit from "./pages/Edit";
@@ -62,7 +62,7 @@ ReactDOM.render((
     <Route component={App}>
       <Route path="/" component={Home} data={data} />
       <Route path="/about" component={About} pageTitle="About page" />
-      <Route path="/sync" component={Sync} />
+      <Route path="/settings" component={Settings} />
       <Route path="/start" component={Start} />
       <Route path="/schedule" component={Schedule} />
       <Route path="/edit" component={Edit} />

@@ -16,7 +16,7 @@ exports[`<Header /> should match snapshot 1`] = `
       className="icon icon-gear pull-right"
       onlyActiveOnIndex={false}
       style={Object {}}
-      to="/sync">
+      to="/settings">
       <a
         className="icon icon-gear pull-right"
         onClick={[Function]}

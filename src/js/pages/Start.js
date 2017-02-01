@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
+import PageHeading from '../components/PageHeading';
 
-class Start extends React.Component{
+class Start extends Component {
 	render() {
 		return (
-			<div>
-				<h1>Start Page</h1>
+			<div className='content'>
+				<PageHeading value="Start page" />
 			</div>
 		);
 	}

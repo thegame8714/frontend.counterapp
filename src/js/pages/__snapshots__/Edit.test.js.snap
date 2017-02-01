@@ -1,0 +1,18 @@
+exports[`Edit Page should render page tile as H1 with text 1`] = `
+<Edit
+  route={
+    Object {
+      "pageTitle": "Test Edit page title",
+    }
+  }>
+  <div
+    className="content">
+    <PageHeading
+      value="Edit page">
+      <h1>
+        Edit page
+      </h1>
+    </PageHeading>
+  </div>
+</Edit>
+`;

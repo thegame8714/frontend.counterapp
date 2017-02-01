@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import PracticeFooter from '../components/PracticeFooter';
 //this.props.params.practiceId
 
-class Practice extends React.Component {
+class Practice extends Component {
 
 	render() {
 

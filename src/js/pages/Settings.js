@@ -1,11 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
+import PageHeading from '../components/PageHeading';
 
-class Sync extends React.Component{
+class Settings extends Component {
 	render() {
 		return (
 			<div className="content">
 				<div className="content-padded">
-					<h1>Settings</h1>
+					<PageHeading object="this.props.route" path="pageTile" value="Settings page" />
 					<h2>Synchronise progress</h2>
 					<p>By providing your email address you can synchronisezed your progres betwen all devices.</p>
 					<form>
@@ -36,4 +37,4 @@ class Sync extends React.Component{
 	}
 }
 
-export default Sync;
+export default Settings;

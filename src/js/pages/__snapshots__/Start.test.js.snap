@@ -1,0 +1,18 @@
+exports[`Start Page should render page tile as H1 with text 1`] = `
+<Start
+  route={
+    Object {
+      "pageTitle": "Test Start page title",
+    }
+  }>
+  <div
+    className="content">
+    <PageHeading
+      value="Start page">
+      <h1>
+        Start page
+      </h1>
+    </PageHeading>
+  </div>
+</Start>
+`;

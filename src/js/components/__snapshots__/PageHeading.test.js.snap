@@ -1,0 +1,12 @@
+exports[`PageHeading should render page tile as H1 with text 1`] = `
+<PageHeading
+  route={
+    Object {
+      "object": "this.props.route",
+      "path": "pageTitle",
+      "value": "Heading Value",
+    }
+  }>
+  <h1 />
+</PageHeading>
+`;

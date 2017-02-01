@@ -2,14 +2,17 @@ exports[`About Page should render page tile as H1 with text 1`] = `
 <About
   route={
     Object {
-      "pageTitle": "Test Page title",
+      "pageTitle": "Test About page title",
     }
   }>
   <div
     className="content">
-    <h1>
-      Test Page title
-    </h1>
+    <PageHeading
+      value="About page">
+      <h1>
+        About page
+      </h1>
+    </PageHeading>
   </div>
 </About>
 `;

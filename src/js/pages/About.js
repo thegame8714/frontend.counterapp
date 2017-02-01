@@ -1,22 +1,32 @@
 import React, { Component } from "react";
-import _ from 'lodash';
+import PageHeading from '../components/PageHeading';
+
 
 class About extends Component {
+
+	/**
+	 * Creates an instance of About.
+	 * 
+	 * @param {any} props
+	 * 
+	 * @memberOf About
+	 */
 	constructor(props) {
 		super()
 	}
 
+
 	/**
+	 * 
+	 * 
 	 * @returns
 	 * 
 	 * @memberOf About
-	 * use lodash to assign fallback value in case issues with react router
-	 *
 	 */
 	render() {
 		return (
 			<div className='content'>
-				<h1>{_.get(this.props.route, 'pageTitle', 'About page')}</h1>
+				<PageHeading value="About page" />
 			</div>
 		);
 	}

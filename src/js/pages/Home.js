@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router";
 
-class Home extends React.Component {
+class Home extends Component {
 	render() {
 		const practices = this.props.route.data;
 		const practiceNode = practices.map((practice) => {
